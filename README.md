@@ -1,4 +1,4 @@
-# C# Language Features — Code Samples
+# C# Language Features - Code Samples
 
 A hands-on reference repo showcasing new language features introduced across recent C# versions, with working code samples and benchmarks.
 
@@ -22,7 +22,7 @@ src/
 
 ### `field` Keyword in Semi-Auto Properties
 
-The `field` keyword gives you access to the compiler-generated backing field directly inside a property accessor — without declaring the field yourself.
+The `field` keyword gives you access to the compiler-generated backing field directly inside a property accessor - without declaring the field yourself.
 
 ```csharp
 public class FieldKeyword
@@ -41,7 +41,7 @@ Previously, adding any custom logic to a setter required declaring an explicit b
 
 ### Extension Members
 
-C# 14 introduces a new `extension` block syntax that replaces the old `static class` + `this` pattern for extension methods. It also unlocks extension *operators* and extension *properties* — things that were impossible before.
+C# 14 introduces a new `extension` block syntax that replaces the old `static class` + `this` pattern for extension methods. It also unlocks extension *operators* and extension *properties*.
 
 ```csharp
 public static class Enumerable
