@@ -1,7 +1,8 @@
 ﻿using BenchmarkDotNet.Attributes;
 using Csharp15.Csharp14;
+using Enumerable = System.Linq.Enumerable;
 
-namespace Csharp15
+namespace Csharp.BenchMarks
 {
     public class MyBenchMarks
     {
@@ -18,5 +19,6 @@ namespace Csharp15
         {
             return _functions.ExtensionMethodWithDelegateSum();
         }
+
     }
 }

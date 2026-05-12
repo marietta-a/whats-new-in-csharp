@@ -12,5 +12,16 @@ namespace Csharp15.Csharp14
         }
     }
 
+    public static class FileExtensions
+    {
+        extension(File)
+        {
+            public static void SayHello(string text)
+            {
+                Console.WriteLine($"Hello File: {text}");
+            }
+        }
+    }
+
 
 }

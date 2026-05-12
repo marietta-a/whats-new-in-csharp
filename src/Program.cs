@@ -1,21 +1,26 @@
-﻿using Csharp.Delegates;
+﻿using BenchmarkDotNet.Toolchains.InProcess.NoEmit;
+using Csharp;
+using Csharp.BenchMarks;
+using Csharp.Delegates;
 using Csharp15;
+using Csharp15.Csharp14;
 
 
-/// Sum elements in the same index of two array sequences, 
-/// if one sequence is shorter, the missing elements are replaced with default value of the element type (0 for int).
+//var sumOfNumbersBenchmark = new SumOfNumbersBenchmark();
 
-//var functions = new MyBenchMarks();
+//// By Recursion
+//Console.WriteLine($"Sum of 100 Numbers by Recursion: {sumOfNumbersBenchmark.SumOfNumbersByRecursion(100)}");
 
-//Console.WriteLine($"Array Sum: {string.Join(", ", functions.BenchmarkArraySum())}");
-//Console.WriteLine($"Extension Method With Delegate Sum: {string.Join(", ", functions.BenchmarkExtensionMethodWithDelegateSum())}");
-//BenchmarkDotNet.Running.BenchmarkRunner.Run<MyBenchMarks>();
+//// By Loop
+//Console.WriteLine($"Sum of 100 Numbers by Looping: {sumOfNumbersBenchmark.SumOfNumbersByLoop(100)}");
+
+//// By Enumerable
+//Console.WriteLine($"Sum of 100 Numbers by Enumerable: {sumOfNumbersBenchmark.SumOfNumbersByEnumeration(100)}");
+
+//// By using the function
+//Console.WriteLine($"Sum of 100 Numbers by the Function {sumOfNumbersBenchmark.SumOfNumbersByFunction(100)}");
 
 
+//BenchmarkDotNet.Running.BenchmarkRunner.Run<SumOfNumbersBenchmark>();
 
-/// Create a delegate that takes two strings (first name and last name) and returns a full name.
-var nameGenerator = new NameGenerator();
-nameGenerator.GenerateName(nameGenerator.handler, "Jane", "Doe");
-nameGenerator.GenerateName(nameGenerator.handler, "Paul", "Doe");
-nameGenerator.GenerateName(nameGenerator.handler, "Mum", "Doe");
-nameGenerator.GenerateName(nameGenerator.handler, "Dad", "Doe");
+File.SayHello("My world");

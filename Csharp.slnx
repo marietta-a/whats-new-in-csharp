@@ -1,5 +1,7 @@
 <Solution>
   <Folder Name="/src/">
+    <Project Path="CodeAnalysis/CodeAnalyzer.csproj" Id="9d2cae35-f849-4d9e-ae54-b1a306526363" />
+    <Project Path="src/ConsoleApp/ConsoleApp.csproj" />
     <Project Path="src/Csharp.csproj" />
   </Folder>
 </Solution>
